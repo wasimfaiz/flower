@@ -1,0 +1,618 @@
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat/Montserrat-Medium.ttf),
+    url(./font/Montserrat/Montserrat-Light.ttf),
+    url(./font/Montserrat/Montserrat-Regular.ttf);
+  }
+  @font-face {
+    font-family: voyage;
+    src: url(./font/Voyage-Regular.ttf),
+    url(./font/Voyage-Bold.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    width: 100%;
+    font-family: montserrat;
+    background-color: rgb(220, 220, 220);
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+#main{
+    width: 100vw;
+    min-height: 100vh;
+    background-image:linear-gradient( to bottom, rgba(0, 0, 0, 0.925),rgba(0, 0, 0, 0.897)), url("./images/poppie-pack-jAVlGc_mUW4-unsplash.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#nav{
+    width: 100vw;
+    height: 8vh;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    padding: 0vmax 3vmax ;
+    font-family: voyage;
+}
+#lftnav{
+    width: 60vw;
+    height: inherit;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-left: 1px solid rgb(228, 228, 228);
+}
+#lftnav a{
+    text-decoration:none ;
+    color: white;
+    letter-spacing: 1px;
+    margin-left: 3vmax;
+}
+#lftnav i{
+    display: none;
+}
+#rgtnav{
+    width: 30vw;
+    height: inherit;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgb(228, 228, 228);
+    border-right: 1px solid rgb(228, 228, 228);
+}
+#rgtnav img{
+    width:7vmax;
+}
+#section1{
+    width: 100vw;
+    height: 110vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0vmax 3vmax ;
+}
+#left{
+    width: 60vw;
+    height: inherit;
+    /* background-color:darksalmon; */
+    border-left: 1px solid rgb(228, 228, 228);
+    padding-top:5vmax;
+    padding-left: 5vmax;
+    position: relative;
+}
+#left #head1{
+    width: 45vw;
+    height: 20vh;
+}
+#head1 h1{
+    font-size: 3.2vmax;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 4vmax;
+    font-family: voyage;
+}
+#head1 p{
+    width: 90%;
+    color: whitesmoke;
+    font-family: montserrat;
+    font-size: 1vmax;
+    font-weight: 300;
+    margin-top: 2vmax;
+    line-height: 1.4vmax;
+}
+#head1 button{
+    margin-top: 3vmax;
+    padding: .5vmax 1vmax;
+    color: white;
+    font-family: voyage;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+}
+#head2{
+    width: 28vw;
+    height: 35vh;
+    /* background-color: aliceblue; */
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    color: rgba(233, 233, 233, 0.904);
+}
+#h2lft{
+    width: 13vw;
+    height: inherit;
+    /* background-color: beige; */
+    background-image: url("./images/pexels-julia-malushko-8070379.jpg");
+    background-position:bottom;
+    background-size: cover;
+}
+#h2rgt{
+    width:15vw ;
+    height: inherit;
+    /* background-color: aquamarine; */
+    padding: 1vmin  3vmin;
+}
+#h2rgt h2{
+    font-family: voyage;
+    margin-bottom: 1vmax;
+}
+#h2rgt p{
+    margin-top: 1.5vmax;
+    font-size: 1vmax;
+    color: rgb(181, 181, 181);
+}
+#h2rgt span{
+    font-family: Maferic italic;
+    font-size: 2vmax;
+}
+#right{
+    width: 30vw;
+    height: inherit;
+    background-color:darkseagreen;
+    border-left: 1px solid rgb(228, 228, 228);
+    border-right: 1px solid rgb(228, 228, 228);
+    background-image: url("./images/pic1.jpg");
+    background-position: center;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+#section2{
+    width: 100vw;
+    height: 70vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+#sec2{
+    width: 94vw;
+    height: inherit;
+    /* background-color: aqua; */
+    border-left: 2px solid rgb(209, 209, 209);
+    border-right: 2px solid rgb(198, 198, 198);
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-evenly;
+}
+#sec2 h2{
+    width:30%;
+    font-size: 2.5vmax;
+    font-family: voyage;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+#cards{
+    width: inherit;
+    height: 30vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 20vw;
+    height: inherit;
+    /* background-color: yellowgreen; */
+    text-align: center;
+}
+.card img{
+    width: 4vmax;
+}
+.card h3{
+    margin-top: .7vmax;
+    margin-bottom: 1vmax;
+    font-size: 1.5vmax;
+    font-family: voyage;
+}
+
+#section3{
+    width: 100vw;
+    height: 80vh;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.901),rgba(0, 0, 0, 0.907)), url("./images/alex-blajan-vNGL14-V5TY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+#text{
+    width: 35vw;
+    height: inherit;
+    /* background-color: crimson; */
+    padding: 7vmax 5vmax;
+}
+#text h1{
+    font-size: 3.7vmax;
+    font-family: voyage;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 4.5vmax;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+#text #arr{
+    margin-top: 3vmax;
+    width: 7vw;
+    height: 5vh;
+    /* background-color: burlywood; */
+    margin-bottom: 2vmax;
+}
+#text a{
+    font-size: 1.2vmax;
+    font-family: voyage;
+    text-decoration: underline;
+    color: whitesmoke;
+}
+#arr i{
+    font-size: 2vmax;
+    color: whitesmoke;
+    margin-right: 2vmax;
+}
+#cards2{
+    width: 62vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#cards2::-webkit-scrollbar{
+    display: none;
+}
+.card2{
+    width: 17vw;
+    height: 50vh;
+    /* background-color: rgb(197, 84, 107); */
+    margin-left: 2vmax;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+.card2 img{
+    width: 100%;
+}
+#section4{
+    width: 100vw;
+    height:80vh;
+    background-color: whitesmoke;
+    padding-top: 5vmax;
+    display: flex;
+    justify-content: space-evenly;
+}
+#part1{
+    width: 18vw;
+    height: 50vh;
+    background-color: #c9aeab;
+    position: relative;
+    z-index: 5;
+    border-top-right-radius: 10vmax;
+    border-bottom-left-radius: 10vmax;
+}
+#part2{
+    width: 18vw;
+    height: 50vh;
+    /* background-color: rgb(166, 49, 72); */
+    background-image: url(./images/hai-phung-Ji1UNH8mDYE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: 9;
+    border-top-right-radius: 10vmax;
+    border-bottom-left-radius: 10vmax;
+}
+#part3{
+    width: 45vw;
+    height: 60vh;
+    /* background-color: coral; */
+    padding: 2vmax;
+    color: rgb(31, 31, 31);
+}
+#part3 h1{
+    font-size: 2.8vmax;
+    font-family: voyage;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 2vmax;
+    word-spacing: 2px;
+}
+#part3 button{
+    padding: .6vmax 1.4vmax;
+    margin-top: 3vmax;
+    background-color: rgb(20, 20, 20);
+    font-family: voyage;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#section5{
+    width: 100vw;
+    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782),rgba(0, 0, 0, 0.788));
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#overlay{
+    width: 100vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.767);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#overlay h1{
+    width: 55%;
+    font-size: 2.5vmax;
+    text-align: center;
+    font-family: voyage;
+    color: whitesmoke;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+#overlay button{
+    padding: .5vmax 1.4vmax;
+    margin-top:2vmax ;
+    background-color: rgba(0, 0, 0, 0.468);
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-family: voyage;
+    font-size: 1vmax;
+    cursor: pointer;
+}
+#section5 video{
+    width: 100%;
+    height: 70vh;
+}
+#section5 img{
+    height: inherit;
+}
+
+#section6{
+    width: 100vw;
+    height: 35vh;
+    background-color: whitesmoke;
+}
+#section6 #footer{
+    width: 100vw;
+    height: 32vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#section6 #footer .ftr{
+    width: 20vw;
+    height: 25vh;
+    /* background-color: aquamarine; */
+    padding-top: 2vmax;
+    display: flex;
+    flex-direction: column;
+}
+.ftr img{
+    width: 200px;
+}
+.ftr>a{
+    margin-top: .7vmax;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-family: montserrat;
+    font-weight: 500;
+    text-align: left;
+}
+.ftr>h3{
+    font-family: voyage;
+    font-weight: 700;
+    margin-bottom: 2vmax;
+}
+.ftr #icons{
+    width: 12vw;
+    height: 5vh;
+    /* background-color: #c9aeab; */
+    display: flex;
+    justify-content: space-between;
+}
+.ftr #icons i{
+    color: rgb(55, 52, 52);
+    font-size: 1.6vmax;
+    /* margin-top: 5vmax; */
+}
+
+@media(max-width:500px){
+    #lftnav a{
+        display: none;
+    }
+    #lftnav i{
+        display:flex;
+        color:whitesmoke;
+        margin-left: 2vmax;
+        font-size: 2.5vmax;
+        font-weight: 500;
+    }
+    #rgtnav img{
+        width:11vmax;
+    }
+    #section1{
+        height: 50vh;
+    }
+    #left{
+        width: 60vw;
+        padding-top:2vmax;
+        padding-left: 2vmax;
+    }
+    #left #head1{
+        width: 50vw;
+    }
+    #head2{
+        display: none;
+    }
+    #section2{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(243, 243, 243);
+        display: flex;
+        justify-content: center;
+    }
+    #sec2{
+        width: 84vw;
+        height: inherit;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    #sec2 h2{
+        width:70%;
+        font-size: 3vmax;
+    }
+    #cards{
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+    }
+    .card{
+        width: 65vw;
+        height: inherit;
+        text-align: center;
+    }
+    .card h3{
+        font-size: 2.5vmax;
+    }
+    .card p{
+        font-size: 1.7vmax;
+    }
+    #section3{
+        width: 100vw;
+        height: 60vh;
+        display:block;
+    }
+    #text{
+        width: 90vw;
+        height:35vh;
+    }
+    #text #arr{
+        margin-bottom: 1vmax;
+    }
+    #cards2{
+        width:95vw;
+        height: 30vh;
+    }
+    .card2{
+        width: 20vw;
+        height: 20vh;
+        margin-left: 1.7vmax;
+    }
+    #section4{
+        width: 100vw;
+        height:80vh;
+        background-color: whitesmoke;
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        position: relative;
+    }
+    #part1{
+        width: 35vw;
+        height: 25vh;
+        position: relative;
+        top: -13%;
+        left: 25%;
+    }
+    #part2{
+        width: 35vw;
+        height: 25vh;
+    }
+    #part3{
+        width: 95vw;
+        height: 60vh;
+        padding: 2vmax 3vmax;        
+    }
+    #part3 h1{
+        font-weight: 700;
+    }
+    #part3 p{
+        font-size: 1.8vmax;
+    }
+    #section5{
+        width: 100vw;
+        height: 50vh;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.684),rgba(0, 0, 0, 0.684));
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    #overlay{
+        height: 50vh;
+    }
+    #overlay h1{
+        width: 85%;
+        font-size: 2.8vmax;
+    }
+    #overlay button{
+        margin-top:5vmax ;
+        border: 1px solid whitesmoke;
+    }
+    #section5 video{
+        height: 50vh;
+    }
+    #section6{
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+    }
+    #section6 #footer{
+        width: 100vw;
+        height: 80vh;
+        display: block;
+        padding-top: 2vmax;
+        padding-left: 3vmax;
+    }
+    
+    #section6 #footer .ftr{
+        width: 70vw;
+        height: 20vh;
+    }
+    .ftr img{
+        width: 200px;
+    }
+    .ftr>a{
+        text-align: left;
+    }
+    .ftr #icons{
+        width: 40vw;
+        height: 5vh;
+    }
+    .ftr #icons i{
+        font-size: 3vmax;
+    }
+    
+}
